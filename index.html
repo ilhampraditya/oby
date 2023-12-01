@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <script src="vara.min.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: linear-gradient(0.25turn, rgb(0, 0, 0), rgb(0, 0, 0));
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        overflow: hidden;
+        color: black;
+      }
+      #container {
+        width: 80%;
+        margin: 20px auto;
+        min-height: 650px;
+        margin-top: 150px;
+        color: black;
+      }
+      @media screen and (max-width: 400px) {
+        #container {
+          width: 100%;
+          margin: 50% auto;
+          min-height: 800px;
+        }
+      }
+      .wrapper {
+        position: fixed;
+      }
+      .box div {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 6px solid rgba(255, 255, 255, 0.8);
+      }
+      .box div:nth-child(1) {
+        top: 12%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+      }
+      .box div:nth-child(2) {
+        top: 70%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+      }
+      .box div:nth-child(3) {
+        top: 17%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+      }
+      .box div:nth-child(4) {
+        top: 20%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+      }
+      .box div:nth-child(5) {
+        top: 67%;
+        left: 10%;
+        animation: animate 6s linear infinite;
+      }
+      .box div:nth-child(6) {
+        top: 80%;
+        left: 70%;
+        animation: animate 12s linear infinite;
+      }
+      .box div:nth-child(7) {
+        top: 60%;
+        left: 80%;
+        animation: animate 15s linear infinite;
+      }
+      .box div:nth-child(8) {
+        top: 32%;
+        left: 25%;
+        animation: animate 16s linear infinite;
+      }
+      .box div:nth-child(9) {
+        top: 90%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+      }
+      .box div:nth-child(10) {
+        top: 20%;
+        left: 80%;
+        animation: animate 5s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          transform: scale(0) translateY(0) rotate(0);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.3) translateY(-90px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay src="jaz1.mp3"></audio>
+    <div id="container"></div>
+    <a href="" class="hidden"></a>
+    <div class="wrapper">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script>
+      var fontSize = 40;
+      if (window.screen.width > 700) fontSize = 55;
+      else if (window.screen.width > 1200) fontSize = 80;
+      var vara = new Vara(
+        "#container",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [
+          {
+            text: "Dear Ria Amelia Shinta Patricia Hendra",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 900,
+            duration: 1700,
+          },
+          {
+            text: " ",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 1200,
+          },
+          {
+            text: "entah dengan kata apa mau ku ungkapkan",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3300,
+          },
+          {
+            text: "dari sekian orang yang ku temui ",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3300,
+          },
+          {
+            text: " hanya kamu yang buat aku menjadi orang yang mempercayakan cintanya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 2200,
+          },
+          {
+            text: "Darimu aku belajar banyak hal",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3300,
+          },
+          {
+            text: "dari mencintai keluarga",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1500,
+            duration: 1800,
+          },
+          {
+            text: "dari mencintai hal-hal kecil",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Darimu aku bersyukur akan hal yang kumiliki",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Darimu aku merasa menjadi orang beruntung",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "bisa buat dunia bersamamu",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Teruntukmu",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "semoga dengan sisa umur ini lebih barokah lagi ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "bisa menjadi wanita muslimah yang hebat",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Teruntukmu",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "semoga di selesaikan masalah yang dihadapi dengan lancar",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "jangan takut sendiri",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "jadi dewasa memang berat",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "tapi kali ini kita selesaiin bareng-bareng ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kita pecahin masalah bareng-bareng",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Teruntukmu",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "semoga wish untuk selanjutnya tercapai semua ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Terimakasih untukmu yang mau menjadi teman hidupku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "yang selalu menjadi pendengar yang baik",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "menjadi penyemangat ku dikala gundah",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Terimakasih",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: " udah mau nyelesain masalah kita bareng-bareng",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Terimakasih",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "sudah tetap kuat dikala masalah yang terus berdatangan",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "semoga",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "dengan masalah - masalah ini kita jadi lebih dewasa",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "bisa lebih saling mengerti satu sama lain",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "saling menyayangi satu sama lain",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "Ku semogakan semua berjalan dengan lancar",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "baik naik turun kehidupan kita tetap sama-sama",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "jangan pernah takut sendiri lagi ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "apapun itu gimana pun keadaannya bareng-bareng terus ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "bareng-bareng terus Lil Jannah ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "apapun masalahnya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "yang diselesain masalah ya bukan hubungannya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "jangan lupa sayang teruss sama keluarga",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "sayang terus sama Rey",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "hehehehe biarpun sulit tetep usaha aja dulu ya",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "untuk rumahku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "duniaku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "bocilku yang mau dewasa",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "jangan pernah berubah",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kalo berubah jadi power ranger aja 🙂",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "tetep jadi orang yang paling baik yang pernahku temui",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu tau, bagiku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu sempurna",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu indah",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu cantik",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu jannahku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu rumahku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu cintaku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu milikku",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "kamu my universe",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "looveee youu more moreee moree for everything ",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+          {
+            text: "💙💙🤍",
+            y: 150,
+            fromCurrentPosition: { y: false },
+            delay: 1000,
+            duration: 3200,
+          },
+        ],
+
+        {
+          strokeWidth: 2,
+          color: "#fff",
+          fontSize: fontSize,
+          textAlign: "center",
+        }
+      );
+      vara.ready(function () {
+        var erase = true;
+        vara.animationEnd(function (i, o) {
+          if (i == "no_erase") erase = false;
+          if (erase) {
+            o.container.style.transition = "opacity 1s 1s";
+            o.container.style.opacity = 0;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
